@@ -1,0 +1,4 @@
+[submodule "hwloc"]
+	path = hwloc
+	url = https://github.com/open-mpi/hwloc.git
+	branch = master
