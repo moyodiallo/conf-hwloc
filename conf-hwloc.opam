@@ -13,15 +13,9 @@ depends: [
   "conf-cmake"
 ]
 build: [
-    [ "sh" "-exc" "cd" "hwloc"]
-    [ "sh"
-    "-exc"
-    "./configure" "--prefix" prefix
-    ]
-    [make]
+  ["./build.sh" prefix]
 ]
 install: [
-    [ "sh" "cd" "hwloc"]
-    [make "install"]
+  ["./install.sh"]
 ]
 dev-repo: "git+https://github.com/moyodiallo/conf-hwloc.git"
